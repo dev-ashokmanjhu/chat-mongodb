@@ -20,6 +20,7 @@ app.delete("/api/v1/chatandmessages", async (req, res) => {
     return Message.deleteMany(query);
   });
   //   const message = await Message.deleteMany(query);
+  // const chat = await Chat.deleteMany(query, { $pull: query });
   res.send(chat);
 });
 
